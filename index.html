@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Real</title>
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+
+    <!-- Google Fonts: elegante + moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #c9a24d;
+    letter-spacing: 3px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #555;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #c9a24d;
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border-radius: 8px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #915ebd;
+            color: #333;
+        }
+
+        header {
+            background: url(icono1.png) center/cover no-repeat;
+            padding: 120px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 30px;
+            background: #c79b63;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #b2864f;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 6px 0;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header style="
+    height: 70vh;
+    background: url('icono1.png') center/cover no-repeat;
+    text-align: center;
+">
+
+    <div style="margin-top: 150px;">
+        <h1 style="
+            font-family: 'Playfair Display', serif;
+            font-size: 150px;
+            color: #c9a24d;
+            margin-bottom: 10px;
+        ">
+            REAL
+        </h1>
+
+       <p style="font-size: 22px; color: #222;">
+    Ten el cabello que sueñas
+</p>
+
+
+        <a href="#contacto" class="btn" style="
+            display: inline-block;
+            margin-top: 40px;
+        ">
+            Agendar Cita
+        </a>
+    </div>
+
+</header>
+
+
+<section>
+    <h2 style="text-align:center; font-family: 'Playfair Display', serif;">Nuestros Servicios</h2>
+    <div class="services">
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4" alt="Alisado Keratina">
+            <h3>Keratina Profesional</h3>
+            <p>Alisado profundo con nutrición y brillo.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1526045478516-99145907023c" alt="Alisado Orgánico">
+            <h3>Alisado Orgánico</h3>
+            <p>Sin químicos agresivos, ideal para cabello delicado.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15" alt="Reparación Capilar">
+            <h3>Reparación Capilar</h3>
+            <p>Recupera salud y fuerza después de tratamientos.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 style="text-align:center; font-family: 'Playfair Display', serif;">Galería de Trabajos</h2>
+    <div class="gallery">
+        <img src="Alisado3.jpg" alt="Antes y Después 1">
+        <img src="Alisado2.jpg" alt="Antes y Después 2">
+        <img src="Alisado1.jpg" alt="Cabello liso y brillante">
+        <img src="Alisado4.jpg" alt="Resultado profesional">
+    </div>
+</section>
+
+<section id="contacto">
+    <h2 style="text-align:center; font-family: 'Playfair Display', serif;">Contáctanos</h2>
+    <div class="contact-info">
+        <p>📞 WhatsApp: <strong>+57 304 6515685</strong></p>
+        <p>📍 Calle Falsa 123, Ciudad Belleza</p>
+        <a class="btn" href="https://wa.me/57304 6515685" target="_blank">Enviar Mensaje</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Real – Ten el cabello que sueñas</p>
+</footer>
+
+</body>
+</html>
